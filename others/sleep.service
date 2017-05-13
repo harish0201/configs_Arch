@@ -1,0 +1,12 @@
+[Unit]
+Description=i3 lock for suspension
+After=suspend.target
+
+[Service]
+User=harish
+Type=forking
+Environment=DISPLAY=:0
+ExecStart=/home/harish/.config/i3/lock.sh
+
+[Install]
+WantedBy=sleep.target

@@ -1,0 +1,6 @@
+if [ -z "$1" ]; then
+    flatpak run org.libreoffice.LibreOffice
+else 
+    flatpak run org.libreoffice.LibreOffice --"$1" 
+fi
+

@@ -1,0 +1,1 @@
+killall wpa_supplicant dhcpcd; wpa_supplicant -Bi wlp3s0 -c /home/harish/.fsa.conf && dhcpcd wlp3s0
